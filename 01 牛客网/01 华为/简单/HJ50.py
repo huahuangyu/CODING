@@ -1,0 +1,11 @@
+# HJ50 四则运算
+# https://www.nowcoder.com/practice/9999764a61484d819056f807d2a91f1e?tpId=37&&tqId=21273&rp=1&ru=/ta/huawei&qru=/ta/huawei/question-ranking
+# 描述
+# 输入一个表达式（用字符串表示），求这个表达式的值。
+# 保证字符串中的有效字符包括[‘0’-‘9’],‘+’,‘-’, ‘*’,‘/’ ,‘(’， ‘)’,‘[’, ‘]’,‘{’ ,‘}’。且表达式一定合法。
+a = input()
+a = a.replace("{","(")
+a = a.replace("}",")")
+a = a.replace("[","(")
+a = a.replace("]",")")
+print(int(eval(a)))
